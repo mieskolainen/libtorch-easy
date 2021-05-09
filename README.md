@@ -19,7 +19,7 @@ g++ torch-example.cc \
 -I${LIBTORCH_SYS}/include/torch/csrc/api/include \
 -L${LIBTORCH_SYS}/lib \
 -Wl,-R${LIBTORCH_SYS}/lib \
--ltorch -ltorch_cpu -lc10 -lgomp \
+-ltorch -ltorch_cpu -lc10 -lgomp -lpthread \
 -o torch-example
 ```
 </br>
